@@ -9,7 +9,7 @@ node {
 
        stage('Compiling'){
 
-          sh 'mvn deploy'
+          batfile 'mvn install'
        }
 	   
       stage('Sonar') {
